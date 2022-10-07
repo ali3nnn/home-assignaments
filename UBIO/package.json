@@ -1,0 +1,35 @@
+{
+  "name": "ubiotechnicaltest",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:dev": "tsc -w -p tsconfig.json",
+    "start": "node dist/src/server.js",
+    "start:dev": "nodemon dist/src/server.js",
+    "task": "nodemon dist/src/worker.js",
+    "server": "concurrently \"npm run build:dev\" \"npm run start:dev\" \"npm run task\" ",
+    "test": "jest --forceExit"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "express": "^4.16.4",
+    "jest": "^29.0.3",
+    "mongoose": "^6.6.1",
+    "reflect-metadata": "^0.1.13",
+    "supertest": "^6.2.4",
+    "tsyringe": "^4.7.0",
+    "typescript": "^4.8.3",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "@types/supertest": "^2.0.12",
+    "@jest/globals": "^29.0.3",
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.19.0",
+    "ts-jest": "^29.0.2"
+  },
+  "author": "Alex Barbu",
+  "license": "ISC"
+}
