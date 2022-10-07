@@ -1,0 +1,197 @@
+.heading {
+    text-align: center;
+    padding: 2rem;
+}
+
+.heading span {
+    transform: rotateX(180deg);
+    display: inline-block;
+    position: relative;
+    top: 2px;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.dashboard button {
+    width: 20rem;
+    height: 3rem;
+    font-weight: bold;
+    background: #0967D2;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.assetModal {
+    background: #0967D2;
+    padding: 3rem;
+    position: fixed;
+    z-index: 99;
+    display: block;
+    width: 30rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    margin: auto;
+    border-radius: 0.5rem;
+}
+
+.modalWrapper {
+    position: fixed;
+    z-index: 99;
+    background: #000000d4;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.assetModal button {
+    margin-right: 0.5rem;
+}
+
+.viewContainer {
+    display: grid;
+    padding: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.viewContainer>div {
+    background: #0967D2;
+    color: white;
+    border-radius: .5rem;
+    padding: 1rem;
+    overflow: hidden;
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+    box-shadow: 0px 0px 20px 0px #00000075;
+}
+
+.viewContainer[items="1"]>div {
+    max-width: 500px;
+}
+
+.viewContainer>div.hideCard {
+    transform: scale(0);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.viewContainer>div.destroyCard {
+    display: none;
+}
+
+.viewContainer .assetId {
+    background: #063a74;
+    margin: -1rem -1rem 1rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.viewContainer .assetId:hover {
+    /* cursor: pointer; */
+}
+
+.removeButton {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 3rem;
+    cursor: pointer;
+}
+
+.removeButton:hover {
+    background: rgb(239 52 52);
+}
+
+.removeButton svg {
+    margin: auto;
+    display: block;
+    height: 100%;
+    pointer-events: none;
+}
+
+.updateButton {
+    position: absolute;
+    right: 3rem;
+    top: 0;
+    bottom: 0;
+    width: 3rem;
+    cursor: pointer;
+}
+
+.updateButton:hover {
+    background: rgb(239 172 52);
+}
+
+.updateButton svg {
+    margin: auto;
+    display: block;
+    height: 100%;
+    pointer-events: none;
+}
+
+.removeButton:hover {
+    /* border-radius: 100%; */
+}
+
+.metadata {
+    display: flex;
+    gap: .5rem;
+}
+
+.metadata input:first-child {
+    flex-basis: 25%;
+}
+
+.metadata~div {
+    cursor: pointer;
+}
+
+.info {
+    text-align: center;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+@media(max-width: 600px) {
+    .dashboard {
+        padding: 1rem;
+        flex-direction: column;
+    }
+    .viewContainer {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    .assetModal {
+        width: 100%;
+        height: 100%;
+        border: none;
+        padding: 3rem;
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "type": "mongodb",
+    "url": "mongodb://admin:12345678@127.0.0.1:27017/allinfra_assets",
+    "database": "allinfra_assets",
+    "synchronize": false,
+    "logging": true,
+    "autoLoadEntities": true,
+    "useNewUrlParser": true,
+    "useUnifiedTopology": true,
+    "entities": [
+        "./dist/**/*.entity.{ts,js}"
+    ]
+}

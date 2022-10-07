@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="8" failures="0" errors="0" time="8.117">
+  <testsuite name="handler" errors="0" failures="0" skipped="0" timestamp="2022-04-16T09:11:07" time="2.066" tests="4">
+    <testcase classname="handler should fail validation with less than 3 soldiers" name="handler should fail validation with less than 3 soldiers" time="0.045">
+    </testcase>
+    <testcase classname="handler should generate 1 soldier for each troop" name="handler should generate 1 soldier for each troop" time="0.001">
+    </testcase>
+    <testcase classname="handler should generate 100 soldiers in total" name="handler should generate 100 soldiers in total" time="0">
+    </testcase>
+    <testcase classname="handler should generate 500 soldiers in total" name="handler should generate 500 soldiers in total" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="TroopsController" errors="0" failures="0" skipped="0" timestamp="2022-04-16T09:11:08" time="1.799" tests="4">
+    <testcase classname="TroopsController generateRandomNumberBetween" name="TroopsController generateRandomNumberBetween" time="0.003">
+    </testcase>
+    <testcase classname="TroopsController sumUpTheTroops" name="TroopsController sumUpTheTroops" time="0.001">
+    </testcase>
+    <testcase classname="TroopsController shuffleTroopsName" name="TroopsController shuffleTroopsName" time="0">
+    </testcase>
+    <testcase classname="TroopsController generateTroops" name="TroopsController generateTroops" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>

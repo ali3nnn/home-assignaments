@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1649919087799" clover="3.2.0">
+  <project timestamp="1649919087799" name="All files">
+    <metrics statements="20" coveredstatements="19" conditionals="4" coveredconditionals="4" methods="9" coveredmethods="8" elements="33" coveredelements="31" complexity="0" loc="20" ncloc="20" packages="1" files="1" classes="1"/>
+    <file name="controller.js" path="/Users/abarbu/Projects/Personal/allinfra-sw-eginnering-test/random_troops/controller/controller.js">
+      <metrics statements="20" coveredstatements="19" conditionals="4" coveredconditionals="4" methods="9" coveredmethods="8"/>
+      <line num="4" count="4" type="stmt"/>
+      <line num="5" count="4" type="stmt"/>
+      <line num="10" count="4" type="stmt"/>
+      <line num="14" count="102" type="stmt"/>
+      <line num="18" count="10" type="stmt"/>
+      <line num="22" count="3" type="stmt"/>
+      <line num="26" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="30" count="0" type="stmt"/>
+      <line num="34" count="1" type="stmt"/>
+      <line num="35" count="1" type="stmt"/>
+      <line num="36" count="1" type="stmt"/>
+      <line num="37" count="1" type="stmt"/>
+      <line num="39" count="1" type="stmt"/>
+      <line num="40" count="2" type="stmt"/>
+      <line num="41" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="42" count="1" type="stmt"/>
+      <line num="44" count="1" type="stmt"/>
+      <line num="48" count="1" type="stmt"/>
+      <line num="49" count="1" type="stmt"/>
+      <line num="54" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
