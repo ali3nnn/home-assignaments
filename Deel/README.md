@@ -21,8 +21,6 @@ I got rejected with the following feedback:
 - Pay transaction isn’t including the check query in the transaction ad only considering paid: null, not also paid:false.
 - Deposit endpoint, not transaction and only considering paid:null
 
-If this repo helped you got the job, buy me a coffee. https://revolut.me/r/8EkAakksNL
-
 ## Data Models
 
 > **All models are defined in src/model.js**
